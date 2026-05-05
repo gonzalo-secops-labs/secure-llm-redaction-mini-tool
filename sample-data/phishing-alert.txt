@@ -1,0 +1,19 @@
+SAFE DEMO DATA ONLY (fabricated)
+
+Alert: Possible phishing email detected
+From: "HR Team" <hr@contoso-demo.example>
+To: analyst@security-lab.example
+Subject: Action required: Update MFA settings
+
+User reported suspicious link:
+https://mfa-update.contoso-demo.example/verify
+
+Sender infrastructure observed:
+- Source IP: 198.51.100.25
+- HELO: mail01.contoso-demo.example
+
+Potential impacted user:
+- Username: alice
+- Hostname: ALICE-LAPTOP-01
+
+Attachment hash (SHA256): 2f4c2b8d7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d

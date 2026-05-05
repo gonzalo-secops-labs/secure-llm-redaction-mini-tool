@@ -1,0 +1,27 @@
+{
+  "note": "SAFE DEMO DATA ONLY (fabricated)",
+  "alert_type": "suspicious_login",
+  "timestamp": "2026-05-05T22:13:00Z",
+  "user": {
+    "username": "bob",
+    "email": "bob@contoso-demo.example"
+  },
+  "source": {
+    "ip": "192.0.2.44",
+    "asn": 64500,
+    "geo": "US"
+  },
+  "destination": {
+    "service": "vpn-gateway",
+    "hostname": "vpn01.contoso-demo.example",
+    "url": "https://vpn01.contoso-demo.example/portal"
+  },
+  "artifacts": {
+    "windows_path": "C:\\Users\\bob\\Downloads\\vpnclient.exe",
+    "linux_path": "/home/bob/.config/vpn/client.conf",
+    "md5": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "debug": {
+    "bearer_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.demo.payload.signature"
+  }
+}

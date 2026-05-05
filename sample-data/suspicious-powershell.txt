@@ -1,0 +1,20 @@
+# SAFE DEMO DATA ONLY (fabricated)
+# Simulated suspicious PowerShell snippet for redaction testing.
+# Includes fabricated API key examples to verify secret detection.
+
+powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "
+$u='jdoe';
+$email='john.doe@contoso-demo.example';
+$ip='203.0.113.10';
+$domain='login.contoso-demo.example';
+$path='C:\\Users\\jdoe\\AppData\\Local\\Temp\\stage.ps1';
+$token='sk-test-1234567890abcdef';
+Write-Host "Connecting to $domain ($ip) as $u ($email)";
+Invoke-WebRequest -Uri "https://$domain/api" -Headers @{ Authorization = "Bearer sk-test-1234567890abcdef" };
+"
+
+# Additional secret formats verified by redaction engine (all fabricated):
+# API Key: sk-test-1234567890abcdef
+# api_key=demo_api_key_0123456789abcdef
+# token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.demo.payload
+# password=Fake$Passw0rd!Demo
