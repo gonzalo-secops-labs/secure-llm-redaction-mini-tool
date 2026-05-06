@@ -2,7 +2,7 @@
 
 A lightweight Streamlit app that helps SOC teams **redact sensitive indicators** from alert text/JSON before sharing it with an LLM.
 
-This is a **demo** project.
+This is a portfolio project built with safe demo data to showcase secure LLM usage in SOC workflows.
 
 ## Demo Screenshot
 
