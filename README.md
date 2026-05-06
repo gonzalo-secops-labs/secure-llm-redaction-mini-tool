@@ -102,7 +102,7 @@ streamlit run src/app.py
 ## Future Improvements
 
 - Custom redaction rules per organization
-- Allowlist / preserve list (e.g., keep public IPs)
+- Allowlist/preserve list (e.g., keep public IPs)
 - Better structured JSON field-level redaction
 - Export redaction report (JSON)
 - Optional LLM analysis of **redacted-only** content (explicitly gated by env var)
