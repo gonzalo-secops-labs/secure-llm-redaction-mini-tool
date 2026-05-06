@@ -4,6 +4,12 @@ A lightweight Streamlit app that helps SOC teams **redact sensitive indicators**
 
 This is a **demo** project.
 
+## Demo Screenshot
+
+The demo shows original SOC alert input alongside the redacted output, the sensitive findings count, a High risk level, and the secrets detected flag. It highlights how emails, IPs, file paths, hashes, API keys, bearer tokens, and password-like fields are removed before any LLM interaction, and it uses safe demo data only.
+
+![Secure LLM Redaction Mini Tool Demo](screenshots/redaction-demo.jpg)
+
 ## Problem
 
 SOC alerts often contain sensitive data (PII, infrastructure details, credentials/tokens, internal hostnames, file paths). Copy/pasting raw alerts into an LLM can create data exposure risk.
@@ -82,10 +88,20 @@ Run the app:
 streamlit run src/app.py
 ```
 
+If Streamlit is not available on the PATH, run:
+
+```bash
+python -m streamlit run src/app.py
+```
+
 ## Security Notes
 
 - This repo includes **safe demo data only** in `sample-data/`.
 - Do not commit any real alert data.
+- Do not use client data.
+- Do not use employer data.
+- Do not paste secrets, tokens, or credentials.
+- AI/LLM output must be reviewed by a human.
 - `.env` is ignored by `.gitignore`. Use `.env.example` as a template.
 - No external calls are required for the MVP.
 - Any future LLM integration must:
